@@ -25,6 +25,9 @@ jobs:
           flake8 . --count --max-line-length=120 \
           --statistics --exclude=.git,__pycache__
 
+      - name: Validate data
+        run: python validate_data.py
+
       - name: Run tests
         run: pytest
 
