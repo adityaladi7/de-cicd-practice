@@ -28,6 +28,9 @@ jobs:
       - name: Validate data
         run: python validate_data.py
 
+      - name: Run ETL pipeline  
+        run: python etl.py
+
       - name: Run tests
         run: pytest
 
