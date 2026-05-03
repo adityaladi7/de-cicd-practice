@@ -1,5 +1,2 @@
-def greet():
-  return "pipeline works"
-
-if __name__ == "__main__":
-   print(greet())
+def process_data(data):
+    return [x * 2 for x in data]
